@@ -3,6 +3,11 @@ package bankservice_bonus_challenge;
 import java.math.BigDecimal;
 import java.util.Objects;
 
+/*
+Create a class 'Account' (not a record, should initially be mutable) with the properties
+Account Number (String), Account Balance (BigDecimal), and the associated customer.
+ */
+
 public class Account {
     private String accountNumber;
     private Client client;
