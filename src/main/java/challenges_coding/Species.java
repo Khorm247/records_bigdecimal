@@ -1,4 +1,4 @@
 package challenges_coding;
 
-public record Species(String animalName, String speciesName, String foodRequiredPerDay) {
+public record Species(String typeOfAnimal, String speciesName, String foodRequiredPerDay) {
 }
