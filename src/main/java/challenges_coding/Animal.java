@@ -1,4 +1,4 @@
 package challenges_coding;
 
-public record Animal(String ID, String Name, String species, String Age) {
+public record Animal(Owner owner, String ID, String typ, String name, String species, String age) {
 }
