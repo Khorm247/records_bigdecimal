@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Account {
-    String accountNumber;
-    Client client;
-    BigDecimal balance;
+    private String accountNumber;
+    private Client client;
+    private BigDecimal balance;
 
     public Account(String accountNumber, Client client, BigDecimal balance) {
         this.accountNumber = accountNumber;
@@ -58,5 +58,14 @@ public class Account {
                 ", client=" + client +
                 ", balance=" + balance +
                 '}';
+    }
+
+    public void depositMoneyToBankAccount(BigDecimal amount){
+        balance = balance.add(amount);
+        System.out.println("new Balance: " + getBalance());
+    }
+
+    public void withdrawMoneyFromBankAccount(BigDecimal amount){
+        balance = balance.subtract(amount);
     }
 }
